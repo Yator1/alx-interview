@@ -7,10 +7,10 @@ Method to determine a data is a valid UTF-8 encoding
 def validUTF8(data):
     """
     Determines if a given data set represents a valid UTF-8 encoding.
-    
+
     Args:
         data: List of integers where each integer represents 1 byte of data
-        
+
     Returns:
         bool: True if data is a valid UTF-8 encoding, else False
     """
@@ -47,7 +47,7 @@ def validUTF8(data):
             # Check if the byte starts with 10
             if not (num & mask1 and not (num & mask2)):
                 return False
-            
+
         # Reduce the number of bytes to process
         n_bytes -= 1
 
